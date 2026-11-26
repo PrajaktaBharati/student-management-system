@@ -1,0 +1,52 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Student</title>
+    
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'students/style.css' %}">
+</head>
+
+<body>
+
+    <h1>Student Management System</h1>
+
+    <h2>Edit Student Details</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Name:</label>
+        <input type="text" name="name" value="{{ student.name }}" required>
+
+        <label>Roll Number:</label>
+        <input type="text" name="roll_number" value="{{ student.roll_number }}" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ student.email }}" required>
+
+        <label>Phone:</label>
+        <input type="text" name="phone" value="{{ student.phone }}" required>
+
+        <label>Course:</label>
+        <input type="text" name="course" value="{{ student.course }}" required>
+
+        <label>Gender:</label>
+        <input type="text" name="gender" value="{{ student.gender }}" required>
+
+        <label>Address:</label>
+        <textarea name="address" required>{{ student.address }}</textarea>
+
+        <button type="submit">Update Student</button>
+
+    </form>
+
+</body>
+</html>

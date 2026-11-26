@@ -1,0 +1,28 @@
+[
+{
+  "model": "students.student",
+  "pk": 1,
+  "fields": {
+    "name": "Prajakta Gosavi",
+    "roll_number": "101",
+    "email": "prajaktabharati083@gmail.com",
+    "phone": "7821087881",
+    "course": "Computer Science",
+    "gender": "Female",
+    "address": "pune"
+  }
+},
+{
+  "model": "students.student",
+  "pk": 3,
+  "fields": {
+    "name": "Rahul Patil",
+    "roll_number": "102",
+    "email": "rahulpatil@gmail.com",
+    "phone": "9034561267",
+    "course": "Data Science",
+    "gender": "Male",
+    "address": "kolhapur"
+  }
+}
+]
